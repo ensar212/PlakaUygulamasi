@@ -7,7 +7,8 @@
         {
             "name": "plaka_",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            
         },
         {
             "name": "plaka_ (profile mode)",
@@ -19,7 +20,11 @@
             "name": "plaka_ (release mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "flutterMode": "release",
+            "args": [
+                "--no-sound-null-safety"
+            ]
+            
         }
     ]
 }

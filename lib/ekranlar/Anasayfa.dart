@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plaka_/ekranlar/OyunEkrani.dart';
 class Anasayfa extends StatelessWidget {Anasayfa({super.key});
-var url = "https://www.cupraofficial.com.tr/CupraFiles/20217110344946_CUPRA%20Ateca_XL_Resized.png";
+var url = "https://www.volvocars.com/images/v/-/media/market-assets/uk/applications/dotcom/local-pages/used-cars/model-images/xc40.png?h=1094&iar=0&w=1458";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
