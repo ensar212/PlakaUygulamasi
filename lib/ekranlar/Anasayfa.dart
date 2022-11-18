@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
-class Anasayfa extends StatelessWidget {
-  const Anasayfa({super.key});
-
+class Anasayfa extends StatelessWidget {Anasayfa({super.key});
+var url = "https://www.cupraofficial.com.tr/CupraFiles/20217110344946_CUPRA%20Ateca_XL_Resized.png";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        
-        title: Text('Plaka Uygulaması'),
-        centerTitle: true,
-      ),
+      backgroundColor: Colors.deepPurple[100],
+      appBar: null,
       body: Center(
-        
         child: Column(
-          
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Column(
-              children: [
-                Text('Selammm'),
-              ],
+            Text('Plaka yarışmasına hoş geldiniz.',
+            style: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold,
             ),
+            ),
+            FadeInImage.assetNetwork(
+              placeholder: 'resimler/image.png',placeholderCacheHeight: 100, 
+              image: url),
+              ElevatedButton(onPressed: (){}, child: Text('Oyuna Başla'),),
           ],
         ),
       ),
