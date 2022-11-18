@@ -11,9 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Plaka Uygulaması',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
@@ -39,14 +38,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         
-        title: Text('Plaka'),
+        title: Text('Plaka Uygulaması'),
+        centerTitle: true,
       ),
       body: Center(
         
         child: Column(
           
           mainAxisAlignment: MainAxisAlignment.center,
-          
+          children: [
+            Column(
+              children: [
+                Text('Selammm'),
+              ],
+            ),
+          ],
         ),
       ),
      
