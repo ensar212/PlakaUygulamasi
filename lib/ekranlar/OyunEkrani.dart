@@ -11,6 +11,7 @@ class _OyunEkraniState extends State<OyunEkrani> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         
         title: Text('Oyun Ekranı'),
         centerTitle: true,

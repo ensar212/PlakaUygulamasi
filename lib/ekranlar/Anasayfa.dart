@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plaka_/ekranlar/OyunEkrani.dart';
 class Anasayfa extends StatelessWidget {Anasayfa({super.key});
 var url = "https://www.cupraofficial.com.tr/CupraFiles/20217110344946_CUPRA%20Ateca_XL_Resized.png";
   @override
@@ -18,7 +19,9 @@ var url = "https://www.cupraofficial.com.tr/CupraFiles/20217110344946_CUPRA%20At
             FadeInImage.assetNetwork(
               placeholder: 'resimler/image.png',placeholderCacheHeight: 100, 
               image: url),
-              ElevatedButton(onPressed: (){}, child: Text('Oyuna Başla'),),
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => OyunEkrani()));
+              }, child: Text('Oyuna Başla'),),
           ],
         ),
       ),
